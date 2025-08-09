@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ReservationPage = () => {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-12">
       <div className="container space-y-12">
         {/* Section Title */}
         <SectionTitle
