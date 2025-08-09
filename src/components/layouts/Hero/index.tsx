@@ -24,7 +24,7 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">
+          <p className="text-muted mx-auto max-w-2xl text-lg leading-relaxed md:text-xl">
             Nikmati hidangan tradisional Indonesia dengan cita rasa autentik dan
             suasana yang nyaman untuk keluarga.
           </p>
