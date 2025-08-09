@@ -17,7 +17,7 @@ const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
+        <Button variant="ghost" size="icon" className="lg:hidden">
           <AlignJustify className="size-6" />
           <span className="sr-only">Toggle menu</span>
         </Button>
