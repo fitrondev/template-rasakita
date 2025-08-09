@@ -3,7 +3,9 @@ import {
   Clock,
   Heart,
   LucideIcon,
+  Mail,
   MapPin,
+  Phone,
   Star,
   Users,
 } from "lucide-react";
@@ -37,6 +39,46 @@ export const navigationItems: INavigationItem[] = [
   {
     label: "Kontak",
     href: "#contact",
+  },
+];
+
+// Contact data for restaurant
+export interface IContactInfo {
+  id: number;
+  icon: LucideIcon;
+  title: string;
+  value: string;
+  description: string;
+}
+
+export const contactData: IContactInfo[] = [
+  {
+    id: 1,
+    icon: MapPin,
+    title: "Alamat",
+    value: "Jl. Raya Kuliner No. 123",
+    description: "Jakarta Selatan, DKI Jakarta 12345",
+  },
+  {
+    id: 2,
+    icon: Phone,
+    title: "Telepon",
+    value: "+62 21 1234 5678",
+    description: "Buka setiap hari 08:00 - 22:00",
+  },
+  {
+    id: 3,
+    icon: Mail,
+    title: "Email",
+    value: "info@rasakita.com",
+    description: "Untuk reservasi dan pertanyaan",
+  },
+  {
+    id: 4,
+    icon: Clock,
+    title: "Jam Operasional",
+    value: "08:00 - 22:00",
+    description: "Senin - Minggu (Buka setiap hari)",
   },
 ];
 
