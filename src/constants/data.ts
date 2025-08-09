@@ -1,5 +1,9 @@
-// Navigation data for restaurant website
-export const navigationItems = [
+export interface INavigationItem {
+  label: string;
+  href: string;
+}
+
+export const navigationItems: INavigationItem[] = [
   {
     label: "Beranda",
     href: "/",
