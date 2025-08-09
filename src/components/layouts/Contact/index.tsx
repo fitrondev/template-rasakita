@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="container space-y-12">
         {/* Section Header */}
         <SectionTitle
-          title="Hubungi"
+          title="Hubungi Kami"
           highlightText="Kami"
           subtitle="Kami siap melayani Anda dengan sepenuh hati. Hubungi kami untuk reservasi, pertanyaan, atau saran."
           centered
