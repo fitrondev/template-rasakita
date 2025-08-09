@@ -231,6 +231,193 @@ export interface IFooterData {
   copyright: string;
 }
 
+// Menu data for restaurant
+export interface IMenuItem {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+  category: string;
+  isPopular?: boolean;
+  isSpicy?: boolean;
+}
+
+export interface IMenuCategory {
+  id: string;
+  name: string;
+  description: string;
+}
+
+export const menuCategories: IMenuCategory[] = [
+  {
+    id: "makanan-utama",
+    name: "Makanan Utama",
+    description: "Hidangan utama khas Indonesia yang menggugah selera"
+  },
+  {
+    id: "minuman",
+    name: "Minuman",
+    description: "Minuman segar dan tradisional untuk menemani santapan"
+  },
+  {
+    id: "dessert",
+    name: "Dessert",
+    description: "Penutup manis khas Indonesia yang tak terlupakan"
+  },
+  {
+    id: "snack",
+    name: "Snack",
+    description: "Camilan ringan dan gorengan tradisional"
+  }
+];
+
+export const menuData: IMenuItem[] = [
+  // Makanan Utama
+  {
+    id: 1,
+    name: "Nasi Gudeg Yogya",
+    description: "Gudeg khas Yogyakarta dengan nangka muda, ayam, dan telur pindang",
+    price: 25000,
+    image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=300&fit=crop",
+    category: "makanan-utama",
+    isPopular: true
+  },
+  {
+    id: 2,
+    name: "Rendang Daging Sapi",
+    description: "Rendang daging sapi empuk dengan bumbu rempah khas Padang",
+    price: 35000,
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+    category: "makanan-utama",
+    isPopular: true,
+    isSpicy: true
+  },
+  {
+    id: 3,
+    name: "Ayam Bakar Taliwang",
+    description: "Ayam bakar khas Lombok dengan sambal taliwang yang pedas",
+    price: 28000,
+    image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=400&h=300&fit=crop",
+    category: "makanan-utama",
+    isSpicy: true
+  },
+  {
+    id: 4,
+    name: "Soto Ayam Lamongan",
+    description: "Soto ayam dengan kuah bening, telur, dan kerupuk",
+    price: 20000,
+    image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
+    category: "makanan-utama"
+  },
+  {
+    id: 5,
+    name: "Gado-Gado Jakarta",
+    description: "Sayuran segar dengan bumbu kacang dan kerupuk",
+    price: 18000,
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop",
+    category: "makanan-utama"
+  },
+  {
+    id: 6,
+    name: "Nasi Campur Bali",
+    description: "Nasi dengan lauk pauk khas Bali: ayam betutu, sayur urab, sambal matah",
+    price: 30000,
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&h=300&fit=crop",
+    category: "makanan-utama",
+    isPopular: true
+  },
+  
+  // Minuman
+  {
+    id: 7,
+    name: "Es Teh Manis",
+    description: "Teh manis dingin yang menyegarkan",
+    price: 8000,
+    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop",
+    category: "minuman"
+  },
+  {
+    id: 8,
+    name: "Es Jeruk Nipis",
+    description: "Jeruk nipis segar dengan es batu",
+    price: 10000,
+    image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400&h=300&fit=crop",
+    category: "minuman"
+  },
+  {
+    id: 9,
+    name: "Es Cendol",
+    description: "Minuman tradisional dengan cendol, santan, dan gula merah",
+    price: 12000,
+    image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop",
+    category: "minuman",
+    isPopular: true
+  },
+  {
+    id: 10,
+    name: "Jus Alpukat",
+    description: "Jus alpukat segar dengan susu kental manis",
+    price: 15000,
+    image: "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=400&h=300&fit=crop",
+    category: "minuman"
+  },
+  
+  // Dessert
+  {
+    id: 11,
+    name: "Es Pisang Ijo",
+    description: "Pisang dengan tepung hijau, es serut, dan sirup",
+    price: 15000,
+    image: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop",
+    category: "dessert",
+    isPopular: true
+  },
+  {
+    id: 12,
+    name: "Klepon",
+    description: "Kue tradisional dengan isian gula merah dan kelapa parut",
+    price: 12000,
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+    category: "dessert"
+  },
+  {
+    id: 13,
+    name: "Es Krim Durian",
+    description: "Es krim dengan rasa durian asli yang creamy",
+    price: 18000,
+    image: "https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=400&h=300&fit=crop",
+    category: "dessert"
+  },
+  
+  // Snack
+  {
+    id: 14,
+    name: "Kerupuk Udang",
+    description: "Kerupuk udang renyah sebagai pelengkap",
+    price: 5000,
+    image: "https://images.unsplash.com/photo-1601314002957-dd7f6d1d3d8c?w=400&h=300&fit=crop",
+    category: "snack"
+  },
+  {
+    id: 15,
+    name: "Tempe Mendoan",
+    description: "Tempe goreng tepung khas Purwokerto yang renyah",
+    price: 8000,
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop",
+    category: "snack"
+  },
+  {
+    id: 16,
+    name: "Pisang Goreng",
+    description: "Pisang goreng crispy dengan tepung renyah",
+    price: 10000,
+    image: "https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=400&h=300&fit=crop",
+    category: "snack",
+    isPopular: true
+  }
+];
+
 export const footerData = {
   sections: [
     {
