@@ -7,7 +7,7 @@ import Logo from "@/components/common/Logo";
 const Footer = () => {
   return (
     <footer className="bg-primary text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container py-12">
         {/* Main Footer Content */}
         <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Restaurant Info */}
@@ -15,7 +15,7 @@ const Footer = () => {
             <Logo className="text-foreground mb-2 w-fit rounded-full bg-white p-2" />
             <p className="mb-4 text-white/80">{restaurantInfo.description}</p>
 
-            <div className="space-y-2 text-sm text-white/70">
+            <div className="space-y-2 text-sm">
               <p>{restaurantInfo.address}</p>
               <p>{restaurantInfo.phone}</p>
               <p>{restaurantInfo.email}</p>
@@ -31,7 +31,7 @@ const Footer = () => {
                   <li key={linkIndex}>
                     <Link
                       href={link.href}
-                      className="text-sm text-white/80 transition-colors duration-200 hover:text-white"
+                      className="text-sm text-white/80 transition-colors duration-200"
                     >
                       {link.label}
                     </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             {/* Social Media */}
             <div className="flex items-center space-x-4">
-              <span className="mr-2 text-sm text-white/70">Ikuti Kami:</span>
+              <span className="mr-2 text-sm">Ikuti Kami:</span>
               {footerData.socialMedia.map((social, index) => {
                 const IconComponent = social.icon;
                 return (
@@ -56,7 +56,7 @@ const Footer = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/70 transition-colors duration-200 hover:text-white"
+                    className="transition-colors duration-200"
                     aria-label={social.name}
                   >
                     <IconComponent className="h-5 w-5" />
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="text-center text-sm text-white/70 md:text-right">
+            <div className="text-center text-sm md:text-right">
               <p>{footerData.copyright}</p>
             </div>
           </div>

@@ -212,7 +212,7 @@ export const testimonialsData: ITestimonial[] = [
       "Sebagai mahasiswa, saya sangat terbantu dengan harga yang terjangkau tapi rasa yang tidak murahan. Nasi campur mereka lengkap dan mengenyangkan. Perfect untuk kantong mahasiswa!",
     rating: 4,
     avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
   },
 ];
 
@@ -236,36 +236,48 @@ export const footerData = {
     {
       title: "Menu",
       links: [
-        { label: "Makanan Utama", href: "/menu#main" },
-        { label: "Minuman", href: "/menu#drinks" },
-        { label: "Dessert", href: "/menu#dessert" },
-        { label: "Paket Keluarga", href: "/menu#family" }
-      ]
+        { label: "Makanan Utama", href: "/menu" },
+        { label: "Minuman", href: "/menu" },
+        { label: "Dessert", href: "/menu" },
+        { label: "Paket Keluarga", href: "/menu" },
+      ],
     },
     {
       title: "Layanan",
       links: [
         { label: "Reservasi", href: "/reservation" },
-        { label: "Catering", href: "/catering" },
-        { label: "Delivery", href: "/delivery" },
-        { label: "Private Event", href: "/events" }
-      ]
+        { label: "Catering", href: "/" },
+        { label: "Delivery", href: "/" },
+        { label: "Private Event", href: "/" },
+      ],
     },
     {
       title: "Informasi",
       links: [
-        { label: "Tentang Kami", href: "/about" },
-        { label: "Karir", href: "/careers" },
-        { label: "Blog", href: "/blog" },
-        { label: "FAQ", href: "/faq" }
-      ]
-    }
+        { label: "Tentang Kami", href: "/" },
+        { label: "Karir", href: "/" },
+        { label: "Blog", href: "/" },
+        { label: "FAQ", href: "/" },
+      ],
+    },
   ],
   socialMedia: [
-    { name: "Facebook", href: "https://facebook.com/rasakita", icon: Facebook },
-    { name: "Instagram", href: "https://instagram.com/rasakita", icon: Instagram },
-    { name: "Twitter", href: "https://twitter.com/rasakita", icon: Twitter },
-    { name: "WhatsApp", href: "https://wa.me/6212345678", icon: MessageCircle }
+    {
+      name: "Facebook",
+      href: "https://facebook.com/ansoridev",
+      icon: Facebook,
+    },
+    {
+      name: "Instagram",
+      href: "https://instagram.com/ansoridev",
+      icon: Instagram,
+    },
+    { name: "Twitter", href: "https://twitter.com/ansoridev", icon: Twitter },
+    {
+      name: "WhatsApp",
+      href: "https://wa.me/6285738224566",
+      icon: MessageCircle,
+    },
   ],
-  copyright: "© 2024 Rasa Kita Restaurant. All rights reserved. Developed by Ansori Dev"
+  copyright: "© 2024 Ansori Dev. All rights reserved.",
 };
