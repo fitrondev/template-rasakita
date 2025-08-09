@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
-    <main className="container">
+    <main className="container min-h-screen">
       <Button>Click Me</Button>
 
       <Image
@@ -14,6 +14,8 @@ const Home = () => {
         width={50}
         height={50}
       />
+
+      <h1 className="text-primary">TEST</h1>
 
       <Logo />
     </main>

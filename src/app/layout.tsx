@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tripnesia",
-  description: "Tripnesia - Discover Your Next Adventure",
+  title: "Rasa Kita",
+  description: "Rasa Kita - Template Landing Page Modern",
 };
 
 export default function RootLayout({
